@@ -57,7 +57,7 @@ uint16_t http200ok(void)
   return(es.ES_fill_tcp_data_p(buf,0,PSTR("HTTP/1.0 200 OK\r\nContent-Type: text/html\r\nPragma: no-cache\r\n\r\n")));
 }
 
-char tempBuf[32] = {0}; // <--- for floatsto chars
+char tempBuf[32] = {0}; // <--- for floats to chars
 
 // prepare the webpage by writing the data to the tcp send buffer
 uint16_t print_webpage(uint8_t *buf)
